@@ -47,7 +47,7 @@ function WorkSection() {
   return (
     <>
       <div className='work-section'>
-        <h3>Work Experience</h3>
+        <h2>Work Experience</h2>
         {workExperience.map(renderExperience)}
       </div>
     </>

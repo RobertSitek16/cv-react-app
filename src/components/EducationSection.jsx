@@ -1,16 +1,22 @@
 import education from '../data/educationData';
-import '../styles/WorkSection.css';
+import '../styles/EducationSection.css';
 
 function EducationSection() {
   return (
     <>
       <div className='education-section'>
-        <h3>Education</h3>
+        <h2>Education</h2>
         {education.map((item, index) => (
-          <div key={index}>
-            <p>Title of Study: {item.titleOfStudy}</p>
-            <p>School: {item.school}</p>
-            <p>Date of Study: {item.dateOfStudy}</p>
+          <div key={index} className='education-item'>
+            <p>
+              Title of Study: <text>{item.titleOfStudy}</text>
+            </p>
+            <p>
+              School: <text>{item.school}</text>
+            </p>
+            <p>
+              Date of Study: <text>{item.dateOfStudy}</text>
+            </p>
           </div>
         ))}
       </div>

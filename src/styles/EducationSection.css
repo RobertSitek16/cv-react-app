@@ -1,6 +1,24 @@
 .education-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0.5rem;
-    text-align: left;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.education-section h2 {
+  text-align: center;
+}
+
+.education-section p {
+  font-weight: bold;
+}
+
+.education-section text {
+  font-weight: normal;
+}
+
+.education-item {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
