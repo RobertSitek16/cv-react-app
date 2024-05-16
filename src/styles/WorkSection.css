@@ -1,0 +1,38 @@
+.work-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.work-section p {
+  font-weight: bold;
+}
+
+.work-section text {
+  font-weight: normal;
+}
+
+.work-section h3 {
+  text-align: center;
+}
+
+.work-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.work-section li {
+  margin-bottom: 0.5em;
+}
+
+.work-section li:before {
+  content: "•";
+  margin-right: 0.5em;
+}
+
+.divider {
+  border: none;
+  border-top: 3px solid #ccc;
+  margin: 1em 0;
+}

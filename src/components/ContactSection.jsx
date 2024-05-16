@@ -1,5 +1,5 @@
-import constants from "../data/constans";
-import "../styles/ContactSection.css";
+import constants from '../data/constans';
+import '../styles/ContactSection.css';
 
 function ContactSection() {
   return (

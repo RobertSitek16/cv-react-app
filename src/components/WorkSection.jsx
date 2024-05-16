@@ -1,4 +1,5 @@
-import workExperience from "../data/workExperience";
+import workExperience from '../data/workExperienceData';
+import '../styles/WorkSection.css';
 
 function WorkSection() {
   const renderListItems = (items) => {
@@ -15,11 +16,11 @@ function WorkSection() {
   };
 
   const renderTechStack = (techStack) => {
-    const techStackText = techStack.join(", ");
+    const techStackText = techStack.join(', ');
     return (
       <>
         <p>Project Tech Stack:</p>
-        <p>{techStackText}</p>
+        <text>{techStackText}</text>
       </>
     );
   };
@@ -27,18 +28,25 @@ function WorkSection() {
   const renderExperience = (experience, index) => {
     return (
       <div key={index}>
-        <p>Company Name: {experience.companyName}</p>
-        <p>Position Title: {experience.positionTitle}</p>
-        <p>Date: {experience.startDate} - {experience.endDate}</p>
+        <p>
+          Company Name: <text>{experience.companyName}</text>
+        </p>
+        <p>
+          Position Title: <text>{experience.positionTitle}</text>
+        </p>
+        <p>
+          Date: <text>{experience.startDate} - {experience.endDate}</text>
+        </p>
         {renderMainResponsibilities(experience.responsibilities)}
         {renderTechStack(experience.projectTechStack)}
+        <hr className='divider' />
       </div>
     );
   };
 
   return (
     <>
-      <div>
+      <div className='work-section'>
         <h3>Work Experience</h3>
         {workExperience.map(renderExperience)}
       </div>
