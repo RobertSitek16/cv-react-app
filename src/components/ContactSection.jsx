@@ -1,15 +1,15 @@
+import { Github, Linkedin, Phone } from 'lucide-react';
 import constants from '../data/constans';
 import '../styles/ContactSection.css';
 
 function ContactSection() {
   return (
     <>
-      <ul>
-        <li>Address: {constants.ADDRESS}</li>
-        <li>Phone: {constants.PHONE}</li>
-        <li>Email: {constants.EMAIL}</li>
-        <li>Linkedin: {constants.LINKEDIN}</li>
-        <li>GitHub: {constants.GITHUB}</li>
+      <ul className='icon-list'>
+        <li> <a href={constants.LINKEDIN}> <Linkedin size={28} /> </a> </li>
+        <li> <a href={constants.GITHUB}> <Github size={28} /> </a> </li>
+        <li> <a href={`mailto:${constants.EMAIL}`}> {constants.EMAIL} </a> </li>
+        <li> <a href={`tel:${constants.PHONE}`}> <Phone size={28} /> </a> </li>
       </ul>
     </>
   );
