@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../styles/App.css';
 import ContactSection from './ContactSection.jsx';
 import EducationSection from './EducationSection.jsx';

@@ -1,3 +1,4 @@
+import { Pencil } from 'lucide-react';
 import education from '../data/educationData';
 import '../styles/EducationSection.css';
 
@@ -5,7 +6,10 @@ function EducationSection() {
   return (
     <>
       <div className='education-section'>
-        <h2>Education</h2>
+        <h2 className='editable-heading'>
+          <span className='default-text'>Education</span>
+          <span className='hover-text'>Edit <Pencil size={18} /></span>
+        </h2>
         {education.map((item, index) => (
           <div key={index} className='education-item'>
             <p>

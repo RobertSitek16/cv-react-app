@@ -40,3 +40,31 @@
 .read-the-docs {
   color: #888;
 }
+
+.editable-heading {
+  position: relative;
+}
+
+.editable-heading .default-text,
+.editable-heading .hover-text {
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.editable-heading .hover-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.editable-heading:hover .default-text {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.editable-heading:hover .hover-text {
+  opacity: 1;
+  visibility: visible;
+}

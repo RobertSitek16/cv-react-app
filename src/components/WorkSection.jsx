@@ -1,3 +1,4 @@
+import { Pencil } from 'lucide-react';
 import workExperience from '../data/workExperienceData';
 import '../styles/WorkSection.css';
 
@@ -47,7 +48,10 @@ function WorkSection() {
   return (
     <>
       <div className='work-section'>
-        <h2>Work Experience</h2>
+        <h2 className='editable-heading'>
+          <span className='default-text'>Work Experience</span>
+          <span className='hover-text'>Edit <Pencil size={18} /></span>
+        </h2>
         {workExperience.map(renderExperience)}
       </div>
     </>

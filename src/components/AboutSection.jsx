@@ -1,3 +1,4 @@
+import { Pencil } from "lucide-react";
 import "../styles/AboutSection.css";
 
 function AboutSection() {
@@ -6,7 +7,10 @@ function AboutSection() {
       <div className="about-section">
         <h1>Robert Sitek</h1>
         <h2>Passionate Java Developer</h2>
-        <h2>About</h2>
+        <h2 className='editable-heading'>
+          <span className='default-text'>About</span>
+          <span className='hover-text'>Edit <Pencil size={18} /></span>
+        </h2>
         <p>
           As a Java Developer, I specialize in crafting robust and scalable
           applications that stand at the intersection of innovation and
