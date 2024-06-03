@@ -43,6 +43,7 @@
 
 .editable-heading {
   position: relative;
+  cursor: pointer;
 }
 
 .editable-heading .default-text,
