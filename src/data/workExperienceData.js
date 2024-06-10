@@ -1,4 +1,4 @@
-const workExperience = [
+const workExperienceData = [
  {
     companyName: "XTRF",
     positionTitle: "Java | Groovy Developer",
@@ -52,4 +52,4 @@ const workExperience = [
  }
 ]
 
-export default workExperience;
+export default workExperienceData;

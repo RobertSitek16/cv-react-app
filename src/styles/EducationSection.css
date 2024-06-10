@@ -17,8 +17,8 @@
   font-weight: normal;
 }
 
-.education-item {
-  border: 2px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 1rem;
+.divider {
+  border: none;
+  border-top: 3px solid #ccc;
+  margin: 1em 0;
 }

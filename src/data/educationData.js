@@ -1,14 +1,16 @@
-const education = [
+const educationData = [
     {
         titleOfStudy: "Master Of Engineering - Management And Production Engineering",
         school: "Rzeszow University Of Technology",
-        dateOfStudy: "2019 - 2021"
+        startDate: "2019-10-01",
+        endDate: "2021-06-30"
     },
     {
         titleOfStudy: "Bachelor Of Engineering - Mechanics And Mechanical Engineering",
         school: "Carpathian State University in Krosno",
-        dateOfStudy: "2015 - 2019"
+        startDate: "2015-10-01",
+        endDate: "2019-02-20"
     }
 ]
 
-export default education;
+export default educationData;
